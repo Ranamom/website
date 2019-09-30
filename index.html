@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+	<head>
+		<title>Horloge</title>
+		<meta charset="utf-8">
+		<!-- Source :
+			https://www.dyclassroom.com/web-project/html5-how-to-create-a-simple-clock-using-javascript 
+			https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock
+			https://www.w3schools.com/js/js_date_methods.asp
+		-->
+	</head>
+	<style>
+		html
+		{
+			font-family: Calibri, Cambria, Helvetica, Arial, sans-serif;
+		}
+		
+		body
+		{
+			background-color: black;
+			color: white;
+		}
+
+		.horlogecss
+		{
+			color: red;
+			font-size: 5em;
+			text-align: center;
+			padding-top: 17%;
+		}
+	</style>
+	<body onload="startTime()">
+		<div class=horlogecss id="horloge"></div>
+
+		<script>
+			function startTime() {
+				var today = new Date();
+				var y = today.getFullYear();
+				var months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Decembre"];
+				var w = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
+				var d = today.getDate();
+				var h = today.getHours();
+				var m = today.getMinutes();
+				var s = today.getSeconds();
+				m = checkTime(m);
+				s = checkTime(s);
+				document.getElementById('horloge').innerHTML =
+				h + ":" + m + ":" + s + "</br>" + w[today.getDay()] + " " + "le" + " " + d + " " + months[today.getMonth()] + " " + y + "</br>" + y + "/" + (today.getMonth() + 1) + "/" + today.getDate();
+				var t = setTimeout(startTime, 500);
+			}
+			function checkTime(i) {
+				if (i < 10) {i = "0" + i}; // add zero in front of numbers < 10
+				return i;
+			}
+		</script>
+	</body>
+</html>
