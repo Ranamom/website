@@ -3,6 +3,8 @@
 	<head>
 		<title>Horloge</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<!-- Source :
 			https://www.dyclassroom.com/web-project/html5-how-to-create-a-simple-clock-using-javascript 
 			https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock
@@ -14,17 +16,30 @@
 		{
 			font-family: Calibri, Cambria, Helvetica, Arial, sans-serif;
 		}
-		
+
 		body
 		{
 			background-color: black;
 			color: white;
 		}
-		
+
+		.nojs
+		{
+			display: block;
+			text-transform: uppercase;
+			color: #b80000;
+			text-align: center;
+			font-weight: 800;
+			font-size: 90%;
+			margin-top: 1%;
+			margin-bottom: 1%;
+		}
+
 		.hello
 		{
 			text-align: center;
 		}
+
 		.horlogecss
 		{
 			color: red;
@@ -34,6 +49,14 @@
 		}
 	</style>
 	<body onload="startTime()">
+		<noscript>
+			<div class="nojs" aria-hidden="true">
+				<p>Javascript est désactivé dans votre navigateur. Activez-le pour une meilleure expérience.</p>
+				<!--! https://browser-update.org/fr/update-browser.html -->
+				<!--! http://outdatedbrowser.com/fr -->
+			</div>
+		</noscript>
+
 		<p class=hello>Hello world,</br>this is a little website I made just for fun. :)</p>
 
 		<div class=horlogecss id="horloge"></div>
