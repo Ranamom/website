@@ -5,11 +5,6 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<!-- Source :
-			https://www.dyclassroom.com/web-project/html5-how-to-create-a-simple-clock-using-javascript 
-			https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock
-			https://www.w3schools.com/js/js_date_methods.asp
-		-->
 	</head>
 	<style>
 		html
@@ -39,48 +34,16 @@
 		{
 			text-align: center;
 		}
-
-		.horlogecss
-		{
-			color: red;
-			font-size: 5em;
-			text-align: center;
-			padding-top: 9%;
-		}
 	</style>
-	<body onload="startTime()">
+	<body>
 		<noscript>
 			<div class="nojs" aria-hidden="true">
-				<p>Javascript est désactivé dans votre navigateur. Activez-le pour une meilleure expérience.</p>
+				<p>Javascript is disabled in your browser. Enable it for a better experience.</p>
 				<!--! https://browser-update.org/fr/update-browser.html -->
 				<!--! http://outdatedbrowser.com/fr -->
 			</div>
 		</noscript>
 
-		<p class=hello>Hello world,</br>this is a little website I made just for fun. :)</p>
-
-		<div class=horlogecss id="horloge"></div>
-
-		<script>
-			function startTime() {
-				var today = new Date();
-				var y = today.getFullYear();
-				var months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Decembre"];
-				var w = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
-				var d = today.getDate();
-				var h = today.getHours();
-				var m = today.getMinutes();
-				var s = today.getSeconds();
-				m = checkTime(m);
-				s = checkTime(s);
-				document.getElementById('horloge').innerHTML =
-				h + ":" + m + ":" + s + "</br>" + w[today.getDay()] + " " + "le" + " " + d + " " + months[today.getMonth()] + " " + y + "</br>" + y + "/" + (today.getMonth() + 1) + "/" + today.getDate();
-				var t = setTimeout(startTime, 500);
-			}
-			function checkTime(i) {
-				if (i < 10) {i = "0" + i}; // add zero in front of numbers < 10
-				return i;
-			}
-		</script>
+		<p class=hello>Hello world,</br>this website is under construction.</p>
 	</body>
 </html>
