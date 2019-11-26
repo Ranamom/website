@@ -2,7 +2,7 @@
     "title": "Blog Home",
     "name": "startbootstrap-blog-home",
 	"version": "4.2.1",
-	"baseUrl": "https://jsair.io",
+	"baseUrl": "https://makazzz.netlify.com",
     "scripts": {
 		"start": "node_modules/.bin/gulp watch",
 		"shorten": "netlify-shortener"
