@@ -1,45 +1,45 @@
 {
-    "title": "Blog Home",
-    "name": "startbootstrap-blog-home",
+	"title": "Blog Home",
+	"name": "startbootstrap-blog-home",
 	"version": "4.2.1",
 	"baseUrl": "https://makazzz.netlify.com",
-    "scripts": {
+	"scripts": {
 		"start": "node_modules/.bin/gulp watch",
 		"shorten": "netlify-shortener"
-    },
-    "description": "A basic blog homepage HTML template built with Bootstrap",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://startbootstrap.com/template-overviews/blog-home",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-blog-home/issues",
-        "email": "feedback@startbootstrap.com"
-    },
-    "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-blog-home.git"
-    },
-    "dependencies": {
-        "bootstrap": "4.3.1",
-        "jquery": "3.4.1",
-        "popper.js": "^1.16.0"
-    },
-    "devDependencies": {
-        "browser-sync": "2.26.7",
-        "del": "^4.1.1",
-        "gulp": "4.0.2",
-        "merge-stream": "2.0.0",
-        "netlify-shortener": "^1.0.4"
+	},
+	"description": "A basic blog homepage HTML template built with Bootstrap",
+	"keywords": [
+		"css",
+		"sass",
+		"html",
+		"responsive",
+		"theme",
+		"template"
+	],
+	"homepage": "https://startbootstrap.com/template-overviews/blog-home",
+	"bugs": {
+		"url": "https://github.com/BlackrockDigital/startbootstrap-blog-home/issues",
+		"email": "feedback@startbootstrap.com"
+	},
+	"license": "MIT",
+	"author": "Start Bootstrap",
+	"contributors": [
+		"David Miller (http://davidmiller.io/)"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/BlackrockDigital/startbootstrap-blog-home.git"
+	},
+	"dependencies": {
+		"bootstrap": "4.3.1",
+		"jquery": "3.4.1",
+		"popper.js": "^1.16.0"
+	},
+	"devDependencies": {
+		"browser-sync": "2.26.7",
+		"del": "^4.1.1",
+		"gulp": "4.0.2",
+		"merge-stream": "2.0.0",
+		"netlify-shortener": "^1.0.4"
 	}
 }
