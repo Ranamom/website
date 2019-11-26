@@ -1,9 +1,11 @@
 {
     "title": "Blog Home",
     "name": "startbootstrap-blog-home",
-    "version": "4.2.1",
+	"version": "4.2.1",
+	"baseUrl": "https://jsair.io",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch"
+		"start": "node_modules/.bin/gulp watch",
+		"shorten": "netlify-shortener"
     },
     "description": "A basic blog homepage HTML template built with Bootstrap",
     "keywords": [
@@ -30,12 +32,14 @@
     },
     "dependencies": {
         "bootstrap": "4.3.1",
-        "jquery": "3.4.1"
+        "jquery": "3.4.1",
+        "popper.js": "^1.16.0"
     },
     "devDependencies": {
         "browser-sync": "2.26.7",
         "del": "^4.1.1",
         "gulp": "4.0.2",
-        "merge-stream": "2.0.0"
-    }
+        "merge-stream": "2.0.0",
+        "netlify-shortener": "^1.0.4"
+	}
 }
