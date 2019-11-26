@@ -4,6 +4,7 @@ Hi, this is my website where I will post about my PortableApps.com Dev Test appl
 ## Credits
 *	Hosted by [Netlify](https://www.netlify.com/).
 *	Template from [Start Boostrap Blog Home](https://github.com/BlackrockDigital/startbootstrap-blog-home).
+*	Shortener with [netlify-shortener](https://github.com/kentcdodds/netlify-shortener).
 
 ## License
 makazzz.netlify.com with the [MIT license](https://raw.githubusercontent.com/Makazzz/website/master/LICENSE).
