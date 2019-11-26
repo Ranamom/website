@@ -1,0 +1,5 @@
+version: "1"
+rules:
+  - base: startbootstrap-blog-home
+    upstream: BlackrockDigital:startbootstrap-blog-home    # change `wei` to the owner of upstream repo
+    mergeMethod: hardreset
